@@ -3,13 +3,13 @@ A modular console-based banking system built with Java that simulates core banki
 account creation, deposit, withdrawal, and balance checking. This project leverages object-oriented
 programming principles and JDBC for seamless integration with a MySQL database.
 
-<h4>Features</h4><br>
-- Account creation with unique ID<br>
-- Deposit and withdrawal operations<br>
+<h4>Features</h4>
+- Account creation with unique ID
+- Deposit and withdrawal operations
 - Balance inquiry<br>
-- Command-line interface for smooth user interaction<br>
-- MySQL integration using JDBC<br>
-- Modular and maintainable OOP-based architecture<br>
+- Command-line interface for smooth user interaction
+- MySQL integration using JDBC
+- Modular and maintainable OOP-based architecture
 
 <h4>Technologies Used</h4>
 - Java Core programming language<br>
@@ -44,26 +44,25 @@ The Customer class is a core part of your banking system that models a bank cust
 
 <h4>Package: org.exception</h4>
 Custom exceptions that make the system domain-aware and more descriptive when handling errors.
-    <h5>PhoneNumberLenthMisMatchException extends Exception</h5>
-          •	Purpose: Thrown when the phone number is not exactly 10 digits.
-          •	OOP Benefit: Clear, domain-specific error separation instead of using generic Exception.
-     <h5>EmailFormatException extends Exception</h5>
-          •	Purpose: Thrown when the email format does not match a valid pattern.
-          •	OOP Benefit: Better debugging and validation tracking.
-      <h5>AadharLengthException extends Exception</h5>
-           (Assumed from your earlier Customer code; not shown again here)
-          •	Purpose: Thrown when the Aadhar number is not 12 digits.
+    <h5>PhoneNumberLenthMisMatchException extends Exception</h5><br>
+          •	Purpose: Thrown when the phone number is not exactly 10 digits.<br>
+          •	OOP Benefit: Clear, domain-specific error separation instead of using generic Exception.<br>
+     <h5>EmailFormatException extends Exception</h5><br>
+          •	Purpose: Thrown when the email format does not match a valid pattern.<br>
+          •	OOP Benefit: Better debugging and validation tracking.<br>
+      <h5>AadharLengthException extends Exception</h5><br>
+           (Assumed from your earlier Customer code; not shown again here)<br>
+          •	Purpose: Thrown when the Aadhar number is not 12 digits.<br>
 
 
 <h4>Package org.services</h4>
-Each class in this package encapsulates a specific banking operation, following the Single Responsibility Principle.
-Class	Responsibility	Sample Method
-OpenAccount	Handles ---> new account creation	openAccount()
-Withdraw	Manages ---> withdrawal logic	getWithdraw()
-Deposit	Manages---> deposits	getDeposit()
-CheckBalance	Displays ---> current balance	checkBalance()
-•	These services likely interact with the database using connection logic from the org.connection package.
-•	Separation of Concerns is observed: UI input → service logic → DB layer.
+Each class in this package encapsulates a specific banking operation, following the Single Responsibility Principle.<br>
+OpenAccount	Handles ---> new account creation	openAccount()<br>
+Withdraw	Manages ---> withdrawal logic	getWithdraw()<br>
+Deposit	Manages---> deposits	getDeposit()<br>
+CheckBalance	Displays ---> current balance	checkBalance()<br>
+•	These services likely interact with the database using connection logic from the org.connection package.<br>
+•	Separation of Concerns is observed: UI input → service logic → DB layer.<br>
 
 <h4>Sample output:</h4>
 1.When you first time run the code<br>
