@@ -24,16 +24,16 @@ programming principles and JDBC for seamless integration with a MySQL database.
 - JDBC driver for MySQL
 
 <h4>Steps to Run</h4>
-1. Clone the Repository
-     - git clone https://github.com/your-username/BankingSystem.git
-2. Set up the MySQL Database
-      - Create the database and table using the schema.sql script provided.
-3. Update JDBC Config in DBConnection.java
-        String url = "jdbc:mysql://localhost:3306/banking_db";
-        String username = "root"; // your MySQL username
-        String password = "your_password";
-4. Compile and Run
-        - Use your IDE or terminal to compile and run Main.java
+1. Clone the Repository<br>
+     - git clone https://github.com/your-username/BankingSystem.git<br>
+2. Set up the MySQL Database<br>
+      - Create the database and table using the schema.sql script provided.<br>
+3. Update JDBC Config in DBConnection.java<br>
+        String url = "jdbc:mysql://localhost:3306/banking_db";<br>
+        String username = "root"; // your MySQL username<br>
+        String password = "your_password";<br>
+4. Compile and Run<br>
+        - Use your IDE or terminal to compile and run Main.java<br>
 
 
 <h4>OOP Design Overview – org.connection Package</h4>
