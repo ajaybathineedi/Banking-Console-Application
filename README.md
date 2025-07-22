@@ -1,4 +1,4 @@
-<h2>Console-Based Banking System</h2>h2></h2><br>
+<h2>Console-Based Banking System</h2><br>
 A modular console-based banking system built with Java that simulates core banking operations like
 account creation, deposit, withdrawal, and balance checking. This project leverages object-oriented
 programming principles and JDBC for seamless integration with a MySQL database.
