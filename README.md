@@ -1,71 +1,71 @@
-Console-Based Banking System
+<h2>Console-Based Banking System</h2>h2></h2><br>
 A modular console-based banking system built with Java that simulates core banking operations like
 account creation, deposit, withdrawal, and balance checking. This project leverages object-oriented
 programming principles and JDBC for seamless integration with a MySQL database.
 
-Features
-- Account creation with unique ID
-- Deposit and withdrawal operations
-- Balance inquiry
-- Command-line interface for smooth user interaction
-- MySQL integration using JDBC
-- Modular and maintainable OOP-based architecture
+<h4>Features</h4><br>
+- Account creation with unique ID<br>
+- Deposit and withdrawal operations<br>
+- Balance inquiry<br>
+- Command-line interface for smooth user interaction<br>
+- MySQL integration using JDBC<br>
+- Modular and maintainable OOP-based architecture<br>
 
-Technologies Used
-- Java Core programming language
-- JDBC (Java Database Connectivity) For connecting Java with MySQL
-- MySQL Database to persist account and transaction data
-- OOP (Object-Oriented Programming) For clean modular structure
+<h4>Technologies Used</h4>
+- Java Core programming language<br>
+- JDBC (Java Database Connectivity) For connecting Java with MySQL<br>
+- MySQL Database to persist account and transaction data<br>
+- OOP (Object-Oriented Programming) For clean modular structure<br>
 
-Prerequisites
+<h4>Prerequisites</h4>
 - Java JDK 8 or above
 - MySQL Server
 - Any IDE (e.g., IntelliJ IDEA, Eclipse)
 - JDBC driver for MySQL
 
-Steps to Run
+<h4>Steps to Run</h4>
 1. Clone the Repository
- git clone https://github.com/your-username/BankingSystem.git
+     - git clone https://github.com/your-username/BankingSystem.git
 2. Set up the MySQL Database
- - Create the database and table using the schema.sql script provided.
+      - Create the database and table using the schema.sql script provided.
 3. Update JDBC Config in DBConnection.java
- String url = "jdbc:mysql://localhost:3306/banking_db";
- String username = "root"; // your MySQL username
- String password = "your_password";
+        String url = "jdbc:mysql://localhost:3306/banking_db";
+        String username = "root"; // your MySQL username
+        String password = "your_password";
 4. Compile and Run
- - Use your IDE or terminal to compile and run Main.java
+        - Use your IDE or terminal to compile and run Main.java
 
 
-OOP Design Overview – org.connection Package
+<h4>OOP Design Overview – org.connection Package</h4>
 The org.connection package is responsible for managing the database connection layer of your banking system. It follows key object-oriented principles such as abstraction, encapsulation, modularity, and interface-driven development.
 
-OOP Design Overview – org.customer.Customer Class
+<h4>OOP Design Overview – org.customer.Customer Class</h4>
 The Customer class is a core part of your banking system that models a bank customer. It encapsulates the customer's identity and validation logic, demonstrating strong object-oriented programming principles.
 
-Package: org.exception
+<h4>Package: org.exception</h4>
 Custom exceptions that make the system domain-aware and more descriptive when handling errors.
- PhoneNumberLenthMisMatchException extends Exception
-•	Purpose: Thrown when the phone number is not exactly 10 digits.
-•	OOP Benefit: Clear, domain-specific error separation instead of using generic Exception.
- EmailFormatException extends Exception
-•	Purpose: Thrown when the email format does not match a valid pattern.
-•	OOP Benefit: Better debugging and validation tracking.
- AadharLengthException extends Exception
-(Assumed from your earlier Customer code; not shown again here)
-•	Purpose: Thrown when the Aadhar number is not 12 digits.
+    <h5>PhoneNumberLenthMisMatchException extends Exception</h5>
+          •	Purpose: Thrown when the phone number is not exactly 10 digits.
+          •	OOP Benefit: Clear, domain-specific error separation instead of using generic Exception.
+     <h5>EmailFormatException extends Exception</h5>
+          •	Purpose: Thrown when the email format does not match a valid pattern.
+          •	OOP Benefit: Better debugging and validation tracking.
+      <h5>AadharLengthException extends Exception</h5>
+           (Assumed from your earlier Customer code; not shown again here)
+          •	Purpose: Thrown when the Aadhar number is not 12 digits.
 
 
-Package org.services
+<h4>Package org.services</h4>
 Each class in this package encapsulates a specific banking operation, following the Single Responsibility Principle.
 Class	Responsibility	Sample Method
-OpenAccount	Handles new account creation	openAccount()
-Withdraw	Manages withdrawal logic	getWithdraw()
-Deposit	Manages deposits	getDeposit()
-CheckBalance	Displays current balance	checkBalance()
+OpenAccount	Handles ---> new account creation	openAccount()
+Withdraw	Manages ---> withdrawal logic	getWithdraw()
+Deposit	Manages---> deposits	getDeposit()
+CheckBalance	Displays ---> current balance	checkBalance()
 •	These services likely interact with the database using connection logic from the org.connection package.
 •	Separation of Concerns is observed: UI input → service logic → DB layer.
 
-Sample output:
+<h4>Sample output:</h4>
 1.When you first time run the code<br>
  <img width="353" height="173" alt="image" src="https://github.com/user-attachments/assets/9f322f17-7854-44f6-bbd3-f226b5f35f82" /><br>
 
